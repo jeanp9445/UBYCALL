@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp"
+    android:id="@+id/main_container"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="107dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/listImage"
+            android:layout_width="79dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user" />
+
+
+        <!--  android:layout_toEndOf="@id/listImage"/>-->
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/listImage"
+            android:text="Nombre"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/apellido"
+            android:layout_width="180dp"
+            android:layout_height="27dp"
+            android:layout_below="@+id/nombre"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="6dp"
+            android:layout_toStartOf="@+id/ciclo"
+            android:layout_toEndOf="@+id/listImage"
+            android:text="Apellido"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ciclo"
+            android:layout_width="77dp"
+            android:layout_height="54dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="-11dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:layout_toEndOf="@id/nombre"
+            android:text="ciclo"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

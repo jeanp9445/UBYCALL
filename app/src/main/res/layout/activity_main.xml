@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imSalir1"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:onClick="Salir"
+        android:tint="#42485E"
+        android:translationX="-450px"
+        android:translationY="-120px"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <!-- Image at the top -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="387dp"
+        android:layout_height="107dp"
+        android:translationY="-100px"
+        app:srcCompat="@drawable/ub" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="-40px">
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="#42485E"
+            android:padding="8dp"
+            android:translationX="140px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Registra tus datos"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <!-- Form fields -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp">
+
+                    <!-- Nombre -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Nombre"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <EditText
+                            android:id="@+id/nombre_e"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:backgroundTint="#6E707A"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <!-- Apellido -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Apellido"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <EditText
+                            android:id="@+id/apellido_e"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:backgroundTint="#6E707A"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <!-- Correo -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Correo"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <EditText
+                            android:id="@+id/ciclo_e"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:backgroundTint="#6E707A"
+                            android:ems="10"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <!-- Teléfono -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Teléfono"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <EditText
+                            android:id="@+id/descripcion_e"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:backgroundTint="#6E707A"
+                            android:ems="10"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <!-- DNI -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="DNI"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <EditText
+                            android:id="@+id/imagen_e"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:backgroundTint="#6E707A"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp">
+
+                    <Button
+                        android:id="@+id/bt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:backgroundTint="@color/black"
+                        android:text="Ok" />
+
+                    <Button
+                        android:id="@+id/bt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/black"
+                        android:text="Ver Lista" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+
+</LinearLayout>
