@@ -2,13 +2,12 @@ package com.rallendet.miapellido_s0x;
 
 public class Login {
 
-    String idLogin, correo, password, idUsuario;
+    String idLogin, correo, password;
 
-    public Login(String idLogin, String correo, String password, String idUsuario) {
+    public Login(String idLogin, String correo, String password) {
         this.idLogin = idLogin;
         this.correo = correo;
         this.password = password;
-        this.idUsuario = idUsuario;
     }
 
     public String getIdLogin() {
@@ -35,11 +34,4 @@ public class Login {
         this.password = password;
     }
 
-    public String getIdUsuario() {
-        return idUsuario;
-    }
-
-    public void setIdUsuario(String idUsuario) {
-        this.idUsuario = idUsuario;
-    }
 }

@@ -16,6 +16,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".RCuenta"
+            android:exported="false" />
+        <activity
+            android:name=".Registro"
+            android:exported="false" />
+        <activity
+            android:name=".CCuenta"
+            android:exported="false" />
+        <activity
             android:name=".Logeo"
             android:exported="false" />
         <activity
